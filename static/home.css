@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #373636;
+}
+  
+h1 {
+  display: flex;
+  color: #da8910;
+  justify-content: center;
+  font-size: 500%;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+
+.links{
+  display: flex;
+  justify-content: right;
+  
+}
+
+a:link{
+  color: white;
+  text-decoration: none;
+}
+
+a:visited{
+  color: white;
+}
+
+a:hover{
+  color: #da8910;
+}
+
+.login{
+  padding-right: 2%;
+}
+
+.register{
+  padding-left: 2%;
+}
+
+.banner{
+  background-color: #da8910;
+  text-align: center;
+} 

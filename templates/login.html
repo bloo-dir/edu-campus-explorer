@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ECE-Login</title>
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='register_login.css') }}">
+
+    </head>
+    <body>
+        <h1>Edu Campus Explorer</h1>
+        <div class="conexion case">
+            <a href="/">Back</a>
+            <form action="{{ url_for('login') }}" method="POST">
+                <p>Please connect</p>
+                <input type='email' name='email' placeholder="Email" required>
+                <br>
+                <input type='password' name='password' placeholder="Password" required>
+                <br>
+                {% if message %}
+                <div class="banner">{{ message }}</div>
+                {% endif %}
+                <br>
+                <label>Choose Category:</label>
+                <br>
+                <select name="choice">
+                    {% for row in categories %}
+                    <option value="{{ row[0] }}">{{ row[0] }}</option>
+                    {% endfor %}
+                </select>
+                <br>
+                <input type='submit' value='Connect'>
+            </form>
+        </div>
+    </body>
+</html>

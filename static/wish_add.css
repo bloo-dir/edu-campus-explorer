@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #373636;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+    color: #da8910;
+    justify-content: center;
+    font-size: 500%;
+}
+
+a:link,
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #da8910;
+}
+
+form{
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 3rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+
+input{
+    background: transparent;
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 1rem;
+    width: 200px;
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, .2);
+    transition: all .3s;
+    margin-bottom: 15px;
+}
+
+label{
+    color: #da8910;
+}
+
+select{
+    margin-top: 10px;
+}
+
+::placeholder{
+    color: white;
+}
+
+input:hover,
+input[type="email"]:focus,
+input[type="password"]:focus{
+    background:rgba(255, 255, 255, 0.1);
+    box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, .2);
+}
+
+input[type="submit"]{
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: white;
+    width: 150px;
+}

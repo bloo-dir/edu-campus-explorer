@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ECE</title>
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='home.css') }}">
+    </head>
+    <body>
+        {% if message %}
+        <div class="banner">{{ message }}</div>
+        {% endif %}
+        <nav class="links">
+            <a class="login" href="/login">LOGIN</a>
+            <a class="register" href="/register">REGISTER</a>
+        </nav>
+        <h1>Edu Campus Explorer</h1>
+        <img src="{{ url_for('static', filename='images/World_Map.svg') }}"/>
+    </body>
+</html>

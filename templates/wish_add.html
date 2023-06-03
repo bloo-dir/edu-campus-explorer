@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ECE-Destination</title>
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='wish_add.css') }}">
+    </head>
+    <body>
+        <header>
+            <nav class="links">
+                <a class="log-out" href="/">LOG-OUT</a>
+            </nav>
+        </header>
+        <h1>Edu Campus Explorer</h1>
+        <br>
+        <form action="{{ url_for('wish_save') }}" method="POST">
+            <label>Choose your favourite campus:</label>
+            <br>
+            <select name="choice">
+                {% for row in categories %}
+                <option value="{{ row[1] }}">{{ row[1] }}</option>
+                {% endfor %}
+            </select>
+            <br>
+            <input type='submit' value='Confirm'>
+        </form>
+    </body>
+</html>

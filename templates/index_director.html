@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ECE</title>
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='index_director.css') }}">
+    </head>
+    <body>
+        <header>
+            {% if message %}
+            <div class="banner">{{ message }}</div>
+            {% endif %}
+            <nav class="links">
+                <a class="log-out" href="/">LOG-OUT</a>
+            </nav>
+        </header>
+        <h1>Edu Campus Explorer</h1>
+        <div class="container">
+            <img src="{{ url_for('static', filename='images/World_Map.svg') }}"/>
+            <a  class="wish_list" href="/wish_list"> Wish list</a>
+            <a  class="add_campus" href="/addcamp">Add a campus</a>
+        </div>
+    </body>
+</html>

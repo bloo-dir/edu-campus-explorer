@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ECE-New account</title>
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='register_login.css') }}">
+    </head>
+    <body>
+        <h1>Edu Campus Explorer</h1>
+        <br>
+        <div class="registration_case">
+            <a href="/">Cancel</a>
+            <form action="{{ url_for('registersave') }}" method="POST">
+                <p>Welcome</p>
+                <input type='email' name='email' placeholder="Email" required>
+                <br>
+                <input type='password' name='password' placeholder="Password" required>
+                <br>
+                <label>Choose Category:</label>
+                <br>
+                <select name="choice">
+                    {% for row in categories %}
+                    <option value="{{ row[0] }}">{{ row[0] }}</option>
+                    {% endfor %}
+                </select>
+                <br>
+                <input type='submit' value='Create account'>
+                
+            </form>
+        </div>
+    </body>
+</html>

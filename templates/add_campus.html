@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ECE-New campus</title>
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='register_login.css') }}">
+    </head>
+    <body>
+        <h1>Edu Campus Explorer</h1>
+        <br>
+        <div class="registration_case">
+            <a href="/index_director">Cancel</a>
+            <form action="{{ url_for('addcamp') }}" method="POST">
+                <label>Enter the new campus:</label>
+                <br>
+                <input type='campus' name='campus' placeholder="City" required>
+                <br>
+                <input type='submit' value='Confirm'>
+                
+            </form>
+        </div>
+    </body>
+</html>

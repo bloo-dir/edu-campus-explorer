@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #373636;
+}
+    
+h1 {
+display: flex;
+color: #da8910;
+justify-content: center;
+font-size: 500%;
+margin-top: 5px;
+margin-bottom: 50px;
+}
+
+.links{
+display: flex;
+justify-content: right;
+
+}
+
+.log-out:link{
+color: white;
+text-decoration: none;
+}
+
+.log-out:visited{
+    color: white;
+    text-decoration: none;
+    }
+
+.log-out:hover{
+color: #da8910;
+}
+
+
+
+.login{
+padding-right: 2%;
+}
+
+.register{
+padding-left: 2%;
+}
+
+.container{
+    position: relative;
+}
+
+
+input:hover,
+input[type="submit"]:focus{
+    background:rgba(255, 255, 255, 0.1);
+    box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, .2);
+}
+
+.wish_list {
+    position: absolute;
+    background-color: #da8910;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 4px 2px;
+    border-radius: 50px;
+    top: 40%;
+}
+
+.add_campus {
+    position: absolute;
+    background-color: #da8910;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 4px 2px;
+    border-radius: 50px;
+    right: 100px;
+    top: 40%;
+}
+
+.wish_list{
+    left: 100px;
+}
+
+.add_campus:hover,
+.wish_list:hover{
+    background-color: #da89108e;
+}
+
+.banner{
+    background-color: #da8910;
+    text-align: center;
+}

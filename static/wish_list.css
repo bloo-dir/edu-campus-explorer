@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #373636;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+    color: #da8910;
+    justify-content: center;
+    font-size: 500%;
+}
+
+a:link,
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #da8910;
+}
+
+table{
+    color: white;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ECE-Wish list</title>
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='wish_list.css') }}">
+    </head>
+    <body>
+        <h1>Edu Campus Explorer</h1>
+        <br>
+        <a href="/index_director">Cancel</a>
+        <br>
+        <table border="1">
+            <tr>
+                <th>Campus</th>
+                <th>Student_Mail</th>
+            </tr>
+            <!-- Loop through the data and generate table rows -->
+            {% for row in results %}
+                <tr>
+                    <td>{{ row[1] }}</td>
+                    <td>{{ row[2] }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
